@@ -31,7 +31,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v4
       with:
         role-to-assume: arn:aws:iam::242201291893:role/ga_ecr_role
-
+        aws-region: $AWS_REGION
 
     - name: Login to Amazon ECR Private
       id: login-ecr
